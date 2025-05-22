@@ -1,0 +1,160 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e1117;
+  color: #ffffff;
+}
+
+.app {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+
+
+.summary-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.summary-box {
+  background: #1a1f2a;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.summary-box.blue {
+  background-color: #0d6efd;
+}
+
+.summary-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.summary-box p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Holdings Table */
+.holdings-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1c1f26;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #2c2f36;
+}
+
+th {
+  background-color: #242a35;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #1f232d;
+}
+
+tr:hover {
+  background-color: #2a2f3a;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  accent-color: #0d6efd;
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-box {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #2c2f36;
+}
+
+
+.summary-table th {
+  background-color: #242a35;
+  color: #ffffff;
+}
+
+.summary-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-box {
+    width: 100%;
+  }
+}
